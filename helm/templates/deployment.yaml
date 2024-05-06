@@ -31,6 +31,8 @@ spec:
       labels:
         app: meta-ms-auth
     spec:
+      imagePullSecret:
+      - name: oci-secret
       containers:
       - env:
         - name: DB_USERNAME

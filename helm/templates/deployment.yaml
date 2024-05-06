@@ -88,7 +88,7 @@ spec:
           value: m3T4f0rm3R5-qa
         - name: OAUTH_CLIENT_SECRET
           value: SB)q2VQXTd$4ZZnS-qa
-        image: jmartinezblanco/meta-ms-auth
+        image: iad.ocir.io/idwwmbyiyhww/meta-ms-auth:latest
         imagePullPolicy: Always
         name: meta-ms-auth
         ports:
@@ -107,22 +107,3 @@ spec:
         secret:
           defaultMode: 420
           secretName: fusion-cert
-status:
-  availableReplicas: 1
-  conditions:
-  - lastTransitionTime: "2024-04-30T10:40:17Z"
-    lastUpdateTime: "2024-04-30T10:40:17Z"
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
-    type: Available
-  - lastTransitionTime: "2024-04-25T18:40:16Z"
-    lastUpdateTime: "2024-04-30T12:48:05Z"
-    message: ReplicaSet "meta-ms-auth-56bd75dfcb" has successfully progressed.
-    reason: NewReplicaSetAvailable
-    status: "True"
-    type: Progressing
-  observedGeneration: 7
-  readyReplicas: 1
-  replicas: 1
-  updatedReplicas: 1
